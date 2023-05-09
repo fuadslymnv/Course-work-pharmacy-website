@@ -1,376 +1,401 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | Ecommerce Website Design Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="header">
-        <div class="container">
-            <div class="navbar">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="./images/Swiss_pharmacy_logo_(old).svg"
+              alt="logo"
+              width="115px"
+            />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#">Home</a></li>
+              <li><a href="#featured-products">Best-seller products</a></li>
+              <li>
+                <a href="#recently-added-product">Recently Added Products</a>
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
 
-                <div class="logo">
-                    <img src="./images/Swiss_pharmacy_logo_(old).svg" alt="logo" width="115px">
-                </div>
-
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#featured-products">Best-seller products</a></li>
-                        <li><a href="#recently-added-product">Recently Added Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <img src="images/cart.png" alt="cart logo" id="cart">
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-            </div>
-
-            <div class="row">
-                <div class="col-2">
-                    <h1>Cheapest Medicine  <br> in Baku </h1>
-                    <p>We are number <strong>1</strong>  in the city.</p>
-                    <a href="" class="btn">Explore Now &#10147;</a>
-                </div>
-                <div class="col-2">
-                    <img src="./images/Medomand-online-Pharmacy-supply-1024x759.png" alt="Banner">
-                </div>
-            </div>
+          <img src="images/cart.png" alt="cart logo" id="cart" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
+
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              Cheapest Medicine <br />
+              in Baku
+            </h1>
+            <p>We are number <strong>1</strong> in the city.</p>
+            <a href="" class="btn">Explore Now &#10147;</a>
+          </div>
+          <div class="col-2">
+            <img
+              src="./images/Medomand-online-Pharmacy-supply-1024x759.png"
+              alt="Banner"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-        <div class="small-container">
-            <h2 class="title" id="featured-products">Best-seller Products</h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/derman1.jpg">
-                    <h4>Bisotens 10mg</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$40.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman2.jpg">
-                    <h4>Denkap</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$55.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman3.jpg">
-                    <h4>Fungipar 150mg</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p><strong>$50.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman4.jpg">
-                    <h4>Nidapar 500mg</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$32.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman5.jpg">
-                    <h4>Ocean Fish oil</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$23.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman6.jpg">
-                    <h4>Sperocal</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$58.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman7.jpg">
-                    <h4>PectoLife</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$15.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman8.jpg">
-                    <h4>ACC 200mg</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$20.00</strong></p>
-                </div>
-            </div>
-
-            <h2 id="recently-added-product" class="title">Recently Added Products</h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/derman9.jpg">
-                    <h4>Ksemin</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$30.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/derman10.jpg">
-                    <h4>Moxicum</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$35.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d11.jpg">
-                    <h4>Triakson</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p><strong>$10.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d12.jpg">
-                    <h4>Maktrol</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$21.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d13.jpg">
-                    <h4>Levoximed</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$30.00</strong></p>
-                </div>     <div class="col-4">
-                    <img src="images/d14.jpg">
-                    <h4>Livromed</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$25.00</strong></p>
-                </div>     <div class="col-4">
-                    <img src="images/d15.jpg">
-                    <h4>Tornaxon</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$40.00</strong></p>
-                </div>     <div class="col-4">
-                    <img src="images/d16.jpg">
-                    <h4>Eritromocin</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$18.00</strong></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/d17.jpg">
-                    <h4>Unodrops</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$45.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d18.jpg">
-                    <h4>Deploram-s</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$28.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d19.jpg">
-                    <h4>Vipaxon</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p><strong>$17.00</strong></p>
-                </div>
-                <div class="col-4">
-                    <img src="images/d20.jpg">
-                    <h4>Eufillin</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p><strong>$90.00</strong></p>
-                </div>
-            </div>
+    <div class="small-container">
+      <h2 class="title" id="featured-products">Best-seller Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/derman1.jpg" />
+          <h4>Bisotens 10mg</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$40.00</strong></p>
         </div>
-<!------------------ offer ------------->
+        <div class="col-4">
+          <img src="images/derman2.jpg" />
+          <h4>Denkap</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$55.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman3.jpg" />
+          <h4>Fungipar 150mg</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>$50.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman4.jpg" />
+          <h4>Nidapar 500mg</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$32.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman5.jpg" />
+          <h4>Ocean Fish oil</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$23.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman6.jpg" />
+          <h4>Sperocal</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$58.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman7.jpg" />
+          <h4>PectoLife</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$15.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman8.jpg" />
+          <h4>ACC 200mg</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$20.00</strong></p>
+        </div>
+      </div>
 
+      <h2 id="recently-added-product" class="title">Recently Added Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/derman9.jpg" />
+          <h4>Ksemin</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$30.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/derman10.jpg" />
+          <h4>Moxicum</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$35.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d11.jpg" />
+          <h4>Triakson</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>$10.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d12.jpg" />
+          <h4>Maktrol</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$21.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d13.jpg" />
+          <h4>Levoximed</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$30.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d14.jpg" />
+          <h4>Livromed</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$25.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d15.jpg" />
+          <h4>Tornaxon</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$40.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d16.jpg" />
+          <h4>Eritromocin</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$18.00</strong></p>
+        </div>
+      </div>
 
- 
+      <div class="row">
+        <div class="col-4">
+          <img src="images/d17.jpg" />
+          <h4>Unodrops</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$45.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d18.jpg" />
+          <h4>Deploram-s</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$28.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d19.jpg" />
+          <h4>Vipaxon</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>$17.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/d20.jpg" />
+          <h4>Eufillin</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>$90.00</strong></p>
+        </div>
+      </div>
+    </div>
+    <!------------------ offer ------------->
 
-<!-- -------------brands----------- -->
+    <!-- -------------brands----------- -->
     <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/Merck_Logo.svg">
-                </div>
-                <div class="col-5">
-                    <img src="images/Logo_Bayer.svg">
-                </div>
-                <div class="col-5">
-                    <img src="images/pfizer_logo.svg">
-                </div>
-                <div class="col-5">
-                    <img src="images/Moderna_logo.svg">
-                </div>
-                <div class="col-5">
-                    <img src="images/Novartis-Logo.svg">
-                </div>
-            </div>
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/Merck_Logo.svg" />
+          </div>
+          <div class="col-5">
+            <img src="images/Logo_Bayer.svg" />
+          </div>
+          <div class="col-5">
+            <img src="images/pfizer_logo.svg" />
+          </div>
+          <div class="col-5">
+            <img src="images/Moderna_logo.svg" />
+          </div>
+          <div class="col-5">
+            <img src="images/Novartis-Logo.svg" />
+          </div>
         </div>
+      </div>
     </div>
 
-<!-------------footer---------->
+    <!-------------footer---------->
 
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="./Swiss_pharmacy_logo_(old).svg">
-                    <p>Our Purpose is to provide the best medicine to the community.
-                    </p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li id="contact" >Contact : <span class="span-number">050-703-87-08</span></li>
-                        <li>Return Policy</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul class="links">
-                        <li><a href="https://www.linkedin.com/in/fuadslymnv" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/fuadslymnv" target="_blank">Github</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
             </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="./Swiss_pharmacy_logo_(old).svg" />
+            <p>Our Purpose is to provide the best medicine to the community.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li id="contact">
+                Contact : <span class="span-number">050-703-87-08</span>
+              </li>
+              <li>Return Policy</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul class="links">
+              <li>
+                <a href="https://www.linkedin.com/in/fuadslymnv" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/fuadslymnv" target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <script>
-        var MenuItems = document.getElementById("MenuItems");
+      var MenuItems = document.getElementById("MenuItems");
 
-        MenuItems.style.maxHeight = "0px";
+      MenuItems.style.maxHeight = "0px";
 
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px"
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px"
-                }    
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
         }
+      }
     </script>
-</body>
+  </body>
 </html>
