@@ -63,6 +63,52 @@
         </div>
       </div>
     </div>
+
+    <section class="slider">
+      <div class="container2" style="margin: 40px auto; width: 800px">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              src="https://melhem.az//uploads/product_images/3b061f33b8a354e3e2945ef5e0890fb3.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <div class="text">Beautiful</div>
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://melhem.az//uploads/product_images/9d5141fb78946fec29426519da64e1e8.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <div class="text">Amazing</div>
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://melhem.az//uploads/product_images/98c7bf54c47e5a30c25b401cc47fde44.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <div class="text">Gorgeous</div>
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://melhem.az//uploads/product_images/acc015c35a7e95b833b0ffd6fd7deac7.jpg"
+              alt=""
+              style="width: 100%"
+            />
+            <div class="text">Fabulous</div>
+          </div>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
     <div class="small-container">
       <h2 class="title" id="featured-products">Best-seller Products</h2>
       <div class="row">
@@ -395,6 +441,29 @@
         } else {
           MenuItems.style.maxHeight = "0px";
         }
+      }
+
+      let slideIndex = 0;
+
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
       }
     </script>
   </body>
